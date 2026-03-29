@@ -8,10 +8,6 @@ profile:
   align: right
   image: xinyue-profile.jpg
   image_circular: true # crops the image to make it circular
-  more_info: >
-    <p>Beijing / Shanghai</p>
-    <p><a href="mailto:xinyue4496@163.com">xinyue4496@163.com</a></p>
-    <p>+86 18221784496</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -27,16 +23,20 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+<p style="margin-top: -0.35rem; margin-bottom: 1.5rem; font-size: 1rem; letter-spacing: 0.01em;">
+  Beijing / Shanghai · <a href="mailto:xinyue4496@163.com">xinyue4496@163.com</a> · +86 18221784496
+</p>
+
 我是辛约（Yue Xin），目前就读于清华大学精密仪器系，处于直博阶段。本科毕业于清华大学未央书院，完成了数理基础科学与测控技术与仪器双学位培养。我的经历从量子惯导精密测量出发，逐步延伸到复杂传感系统建模、误差机理分析、实验平台搭建，以及机器人系统与智能感知相关基础。
 
 这个网站主要用于求职和对外展示，我希望它能比一份 PDF 简历更直观地呈现我的能力结构：既有数理基础和系统建模能力，也有实验系统集成、参数校准、调试排障与工程落地经验。如果你想快速浏览完整信息，可以直接查看 [CV 页面]({{ '/cv/' | relative_url }}).
 
 ## 研究方向与关注问题
 
-- Intelligent sensing and robotics-related system foundations
-- Complex sensing system modeling and calibration
-- State estimation and multi-channel observation decoupling
-- Experimental platform integration and engineering debugging
+- 智能感知与机器人相关系统基础
+- 复杂传感系统建模与校准
+- 状态估计与多通道观测解耦
+- 实验平台集成与工程调试
 
 ## 我的能力特点
 

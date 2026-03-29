@@ -80,15 +80,17 @@ cv:
         summary: Native speaker
 
       - name: English
-        summary: Able to read research papers and communicate in technical contexts
+        summary: CET-6 596 · Able to read research papers and communicate in technical contexts
 
     Projects:
-      - name: Multi-channel Sensing System Modeling and Crosstalk Decoupling
+      - name: "Quantum Inertial Navigation Sensing: Multi-channel Modeling and Crosstalk Decoupling"
         summary: >
-          Built a unified observation framework for four-axis inertial
-          measurement scenarios and analyzed how channel coupling emerges under
-          non-ideal symmetry and multi-channel mixing conditions.
+          Built a unified observation framework in a quantum inertial navigation
+          sensing context for four-axis inertial measurement scenarios, and
+          analyzed how channel coupling emerges under non-ideal symmetry and
+          multi-channel mixing conditions.
         highlights:
+          - Framed the work around quantum inertial navigation measurement, while extracting transferable methods for system modeling and observation decoupling.
           - Studied the joint effects of channel weights, phase bias, and pulse non-idealities through a multi-path phase superposition model.
           - Analyzed AC Stark shifts and cross-crosstalk as sources of system error and pulse fidelity degradation.
           - Explored system-level optimization ideas based on parameter solving and spatial separation.
