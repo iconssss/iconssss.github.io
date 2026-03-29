@@ -31,25 +31,18 @@ latest_posts:
 
 这个网站主要用于求职和对外展示，我希望它能比一份 PDF 简历更直观地呈现我的能力结构：既有数理基础和系统建模能力，也有实验系统集成、参数校准、调试排障与工程落地经验。如果你想快速浏览完整信息，可以直接查看 [CV 页面]({{ '/cv/' | relative_url }}).
 
-## Research and Career Focus
+## 研究方向与关注问题
 
 - Intelligent sensing and robotics-related system foundations
 - Complex sensing system modeling and calibration
 - State estimation and multi-channel observation decoupling
 - Experimental platform integration and engineering debugging
 
-## What I Bring
+## 我的能力特点
 
 - 扎实的物理、数学与系统建模基础，能够快速把复杂问题抽象成可分析、可求解的模型
 - 较强的跨方向迁移能力，已逐步把量子传感研究中的建模与分析方法迁移到机器人和智能感知问题
 - 熟悉 Python、MATLAB 等科研与建模工具，也具备基础 C++ 和 ROS2 工具链接触经验
 - 具备实验系统集成、硬件联调、PID 控制、信号分析与系统级排障经验
 
-## This Site
-
-这个站点当前保留了最适合求职展示的核心内容：
-
-- 首页：用于快速了解我的背景、方向和能力特点
-- [CV]({{ '/cv/' | relative_url }}): 用结构化方式展示教育背景、项目经历、技能与个人亮点
-
-后续我会继续补充更完整的项目说明、英文版内容，以及更适合公开展示的头像或项目图片。
+如果你希望进一步了解我的教育背景、项目经历与技能结构，可以继续查看 [CV 页面]({{ '/cv/' | relative_url }}).
