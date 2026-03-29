@@ -180,19 +180,19 @@ layout: default
                 {% include cv/references.liquid %}
               {% else %}
                 <!-- Generic section -->
-                {% assign bullet_entries = section_entries | where: 'bullet' %}
-                {% assign label_entries = section_entries | where: 'label' %}
-                {% if bullet_entries.size > 0 %}
-                  <ul class="cv-bullet-list">
-                    {% for entry in bullet_entries %}
+                <ul class="cv-bullet-list">
+                  {% for entry in section_entries %}
+                    {% if entry.bullet %}
                       <li>{{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-                    {% endfor %}
-                  </ul>
-                {% endif %}
-                {% for entry in label_entries %}
-                  <div class="card-text font-weight-light">
-                    <strong>{{ entry.label }}:</strong> {{ entry.details }}
-                  </div>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+                {% for entry in section_entries %}
+                  {% if entry.label %}
+                    <div class="card-text font-weight-light">
+                      <strong>{{ entry.label }}:</strong> {{ entry.details }}
+                    </div>
+                  {% endif %}
                 {% endfor %}
               {% endif %}
             </div>
