@@ -1,34 +1,55 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Tsinghua University | PhD Student | Intelligent Sensing, System Modeling, and Engineering Practice
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image:
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Beijing / Shanghai</p>
+    <p><a href="mailto:xinyue4496@163.com">xinyue4496@163.com</a></p>
+    <p>+86 18221784496</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+我是辛约（Yue Xin），目前就读于清华大学精密仪器系，处于直博阶段。本科毕业于清华大学未央书院，完成了数理基础科学与测控技术与仪器双学位培养。我的经历从量子惯导精密测量出发，逐步延伸到复杂传感系统建模、误差机理分析、实验平台搭建，以及机器人系统与智能感知相关基础。
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+这个网站主要用于求职和对外展示，我希望它能比一份 PDF 简历更直观地呈现我的能力结构：既有数理基础和系统建模能力，也有实验系统集成、参数校准、调试排障与工程落地经验。如果你想快速浏览完整信息，可以直接查看 [CV 页面]({{ '/cv/' | relative_url }}).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+## Research and Career Focus
+
+- Intelligent sensing and robotics-related system foundations
+- Complex sensing system modeling and calibration
+- State estimation and multi-channel observation decoupling
+- Experimental platform integration and engineering debugging
+
+## What I Bring
+
+- 扎实的物理、数学与系统建模基础，能够快速把复杂问题抽象成可分析、可求解的模型
+- 较强的跨方向迁移能力，已逐步把量子传感研究中的建模与分析方法迁移到机器人和智能感知问题
+- 熟悉 Python、MATLAB 等科研与建模工具，也具备基础 C++ 和 ROS2 工具链接触经验
+- 具备实验系统集成、硬件联调、PID 控制、信号分析与系统级排障经验
+
+## This Site
+
+这个站点当前保留了最适合求职展示的核心内容：
+
+- 首页：用于快速了解我的背景、方向和能力特点
+- [CV]({{ '/cv/' | relative_url }}): 用结构化方式展示教育背景、项目经历、技能与个人亮点
+
+后续我会继续补充更完整的项目说明、英文版内容，以及更适合公开展示的头像或项目图片。
