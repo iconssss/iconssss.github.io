@@ -6,15 +6,15 @@ subtitle: Tsinghua University | PhD Student | Intelligent Sensing, System Modeli
 
 profile:
   align: right
-  image:
-  image_circular: false # crops the image to make it circular
+  image: xinyue-profile.jpg
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>Beijing / Shanghai</p>
     <p><a href="mailto:xinyue4496@163.com">xinyue4496@163.com</a></p>
     <p>+86 18221784496</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
