@@ -95,26 +95,16 @@ div.container-pdf {
 }
 
 ul.cv-bullet-list {
-  list-style: none;
+  list-style-type: circle;
   margin: 0;
-  padding-left: 0;
+  padding-left: 1.8rem;
 }
 
 ul.cv-bullet-list li {
-  position: relative;
-  padding-left: 1.2rem;
+  position: static;
+  padding-left: 0.1rem;
   margin-bottom: 1rem;
   line-height: 1.8;
-}
-
-ul.cv-bullet-list li::before {
-  content: "·";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: var(--global-theme-color);
-  font-size: 1.35rem;
-  line-height: 1.5;
 }
 
 /*****************************
