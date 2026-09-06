@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Tsinghua Ph.D. | Robot Learning, Computer Vision, and Intelligent Systems
+subtitle: Tsinghua Ph.D. Student | Robot Learning, Computer Vision, and Intelligent Systems
 
 profile:
   align: right
