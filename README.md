@@ -1,8 +1,8 @@
 # Yue Xin — Robotics and Embodied AI Portfolio
 
-Source repository for [iconssss.github.io](https://iconssss.github.io), my professional portfolio and online CV for robot algorithm, robot learning, embodied AI, and computer vision opportunities.
+Source repository for [iconssss.github.io](https://iconssss.github.io), my professional portfolio and online CV for robot learning, embodied AI, and robot algorithm opportunities.
 
-I am a direct Ph.D. student in the Department of Precision Instrument at Tsinghua University. My background combines physics, mathematics, control, complex sensing-system modeling, and experimental engineering. My current work extends this foundation into computer vision, imitation learning, VLA training and evaluation, ROS2 policy execution, 3D perception, and robot motion planning.
+I am a direct Ph.D. student in the Department of Precision Instrument at Tsinghua University. My background combines physics, mathematics, control, complex sensing-system modeling, and experimental engineering. My current work spans visuomotor policy learning, VLA training and evaluation, computer vision, metric 3D perception, latency-aware robot systems, ROS2 policy execution, and motion planning.
 
 ## Site Content
 

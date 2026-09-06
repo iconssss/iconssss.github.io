@@ -1,6 +1,6 @@
 cv:
   name: Yue Xin (辛约)
-  label: Ph.D. Student | Robot Learning, Computer Vision, and Intelligent Systems
+  label: Ph.D. Student | Robot Learning, Embodied AI, and Intelligent Systems
   email: xinyue4496@163.com
   phone: "+86 18221784496"
   location: Beijing / Shanghai
@@ -9,16 +9,17 @@ cv:
   summary: >
     Direct Ph.D. student at Tsinghua University with interdisciplinary training
     in physics, mathematics, measurement and control, and complex sensing
-    systems. My work combines system modeling and experimental engineering with
-    hands-on practice in computer vision, robot learning, VLA training and
-    evaluation, ROS2 policy execution, 3D perception, and motion planning. I am
-    seeking robot algorithm and embodied AI roles where rigorous modeling and
-    end-to-end engineering are both important.
+    systems. I combine rigorous modeling and experimental engineering with
+    hands-on work in visuomotor policy learning, VLA training and evaluation,
+    computer vision, 3D perception, ROS2 policy execution, and latency-aware
+    robot systems. I am seeking robot learning and embodied AI research
+    engineering roles that value both scientific discipline and end-to-end
+    implementation.
 
   sections:
     Experience:
       - company: Goertek Inc.
-        position: Algorithm Engineering Intern — Computer Vision and Edge Deployment
+        position: Industry Practice — Computer Vision Algorithms and Edge Deployment
         location: China
         start_date: 2026-06
         end_date: 2026-07
@@ -76,6 +77,7 @@ cv:
 
       - name: Robot Learning
         keywords:
+          - ACT
           - imitation learning
           - Behavioral Cloning
           - Diffusion Policy
@@ -108,6 +110,7 @@ cv:
           - checkpoint management
           - asynchronous policy execution
           - policy latency analysis
+          - evaluation RNG control
           - model/dataset contract checking
 
       - name: Engineering Tools
@@ -144,7 +147,7 @@ cv:
         summary: >
           Trained and evaluated imitation-learning policies in a ManiSkill robot
           manipulation environment, with emphasis on controlled comparison and
-          closed-loop rollout behavior rather than benchmark claims.
+          generalization and closed-loop rollout behavior.
         highlights:
           - Implemented experiments with Behavioral Cloning, Chunk BC, and Diffusion Policy.
           - Worked with demonstration datasets, action chunking, policy training, and closed-loop rollout evaluation.
@@ -202,21 +205,22 @@ cv:
           - Accumulated practical experience in hardware integration, system troubleshooting, sensitivity analysis, and engineering implementation.
 
     Research and Engineering Focus:
-      - bullet: Robot learning and embodied AI for manipulation, with emphasis on imitation learning, policy evaluation, and reliable execution.
-      - bullet: Vision and 3D perception for closed-loop robot interaction.
-      - bullet: Robot software, motion planning, and latency-aware policy runtime systems.
-      - bullet: Complex sensing-system modeling, calibration, uncertainty reasoning, and hardware-software integration.
+      - bullet: Visuomotor policy learning for manipulation, including imitation learning, action chunking, replanning, generalization, and closed-loop evaluation.
+      - bullet: VLA training and evaluation systems, with emphasis on model/data/action contracts, cross-embodiment transfer, checkpoint comparison, and failure diagnosis.
+      - bullet: Metric 3D and multi-view perception for robot interaction, including calibration sensitivity and robustness under distribution shift.
+      - bullet: Latency-aware robot policy runtimes, asynchronous inference semantics, ROS2 execution, motion planning, and reliable control.
+      - bullet: Reproducible embodied AI experimentation through controlled baselines, ablations, multi-seed evaluation, provenance tracking, and honest negative-result analysis.
 
     Currently Exploring:
-      - bullet: Vision-Language-Action models and robot foundation models.
-      - bullet: Advanced imitation learning and flow-based robot policies.
-      - bullet: OpenPI and π0-family VLA deployment workflows.
+      - bullet: VLA and robot foundation model adaptation for manipulation and cross-embodiment transfer.
+      - bullet: Recovery-aware imitation learning, multimodal behavior, and flow-based robot policies.
+      - bullet: OpenPI and π0-family training, evaluation, and deployment workflows.
 
     Professional Strengths:
       - bullet: Rigorous foundation in physics, mathematics, control, and system modeling, supported by Tsinghua dual-degree training.
       - bullet: Ability to move between model formulation, software implementation, evaluation, and experimental or edge-system debugging.
       - bullet: Hands-on experience across research prototypes, simulation benchmarks, GPU training systems, and delivered computer-vision applications.
-      - bullet: Clear cross-domain trajectory from complex sensing and control toward robot learning and embodied intelligence.
+      - bullet: Transferable systems perspective connecting sensing uncertainty, control, policy learning, and embodied execution.
 
     Honors and Awards:
       - title: National High School Mathematics League (Shanghai Division), Second Prize
