@@ -16,7 +16,34 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{
+        },{id: "nav-selected-projects",
+          title: "Selected Projects",
+          description: "Selected robot learning and embodied AI projects with reproducible evidence.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "projects-latency-aware-robot-policy-runtime",
+          title: 'Latency-Aware Robot Policy Runtime',
+          description: "Freshness-aware scheduling for asynchronous learned control",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/latency-aware-runtime/";
+            },},{id: "projects-metric-3d-visuomotor-learning",
+          title: 'Metric 3D Visuomotor Learning',
+          description: "Low-data control, viewpoint robustness, and multi-view recovery",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/metric-3d-perception/";
+            },},{id: "projects-reliable-vla-fine-tuning-amp-evaluation",
+          title: 'Reliable VLA Fine-Tuning &amp;amp; Evaluation',
+          description: "4-GPU SmolVLA training and RNG-controlled LIBERO evaluation",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/vla-evaluation/";
+            },},{id: "projects-xr-1-vla-temporal-alignment",
+          title: 'XR-1 VLA Temporal Alignment',
+          description: "Testing whether action-prefix conditioning provides latency robustness",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/xr1-temporal-alignment/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
