@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-cv",
           title: "CV",
-          description: "Structured CV for Yue Xin, including education, research projects, skills, and personal strengths.",
+          description: "Professional CV covering robotics, computer vision, research, engineering experience, and technical projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
