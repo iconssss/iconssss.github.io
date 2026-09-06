@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - iconssss
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - iconssss/multi-gpu-vla-finetune-libero
+  - iconssss/project09-latency-aware-robot-policy-runtime
+  - iconssss/project08-3d-embodied-perception
+  - iconssss/project07-xr1-vla-temporal-alignment

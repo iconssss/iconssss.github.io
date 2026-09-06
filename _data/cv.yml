@@ -142,66 +142,45 @@ cv:
         summary: CET-6 596 · Able to read research papers and communicate in technical contexts
 
     Projects:
-      - name: Robot Policy Learning in Manipulation Simulation
+      - name: Reliable Multi-GPU VLA Fine-Tuning and Evaluation
         summary: >
-          Trained and evaluated imitation-learning policies in a ManiSkill robot
-          manipulation environment, with emphasis on controlled comparison and
-          generalization and closed-loop rollout behavior.
+          Built an end-to-end SmolVLA training and evaluation workflow on LIBERO,
+          from native observation/action contract validation to controlled
+          stochastic-policy checkpoint comparison.
         highlights:
-          - Implemented experiments with Behavioral Cloning, Chunk BC, and Diffusion Policy.
-          - Worked with demonstration datasets, action chunking, policy training, and closed-loop rollout evaluation.
-          - Compared policy behavior through reproducible simulation experiments and failure analysis.
+          - Trained on 1,693 episodes / 273,465 frames with 4×RTX 4090 DDP, reaching 3.82× speedup and 289 samples/s at global batch 64.
+          - Integrated official LeRobot training and LIBERO closed-loop evaluation, including self-contained checkpoints and optimizer-state resume from 5K to 20K steps.
+          - Identified task-order-dependent flow-matching RNG as a checkpoint-comparison confound and implemented per-episode paired policy-noise control; the corrected 5K→20K result was 2/30→4/30, reported as a weak signal rather than a significance claim.
 
-      - name: VLA Training, Evaluation, and Debugging
+      - name: Latency-Aware Runtime for Closed-Loop Robot Policies
         summary: >
-          Conducted engineering experiments with LeRobot, SmolVLA, and LIBERO to
-          understand VLA training and inference pipelines, policy timing, and
-          evaluation behavior.
+          Designed an asynchronous learned-policy runtime that tracks action
+          provenance and controls scheduler-induced staleness through explicit
+          synchronous, FIFO, and latest-only semantics.
         highlights:
-          - Completed SmolVLA base training, multi-GPU training, LIBERO evaluation, replanning experiments, paired evaluation, and checkpoint comparisons.
-          - Investigated action prefix/chunk execution, policy replanning, checkpoint compatibility, and observation/action contracts.
-          - Used PyTorch DDP and DeepSpeed ZeRO on multi-RTX 4090 environments, including GPU memory, CUDA, checkpoint, and reproducibility debugging.
+          - Decomposed action age into observation wait, inference latency, and post-inference wait, with per-action timestamp and queue-depth instrumentation.
+          - On MuJoCo Reacher at 100 ms policy latency, LATEST reduced p95 action age from 1.24 s to 150 ms and improved success from 20% to 100% while preserving approximately 20 Hz control.
+          - Validated the mechanism on both a learned action-chunk benchmark and an independent MuJoCo environment with a fixed learned SAC policy.
 
-      - name: ROS2 Learned-policy Execution Pipeline
+      - name: Metric 3D Representations for Low-Data Visuomotor Control
         summary: >
-          Built a simulated learned-policy deployment architecture in ROS2 Jazzy
-          for a Panda manipulator, separating policy inference from the
-          higher-frequency robot execution layer.
+          Built a calibrated RGB-D to world-frame point-cloud pipeline and a
+          compact PointNet policy, then mapped sample efficiency, viewpoint
+          robustness, occlusion recovery, and calibration failure boundaries.
         highlights:
-          - Connected a Python policy node running at 20 Hz to a C++ executor running at 100 Hz.
-          - Integrated MoveIt, ros2_control, KDL inverse kinematics, robot descriptions, transforms, and trajectory execution.
-          - Examined asynchronous execution, latest-action semantics, policy latency, and the interface between learned actions and robot control.
+          - Achieved 95% closed-loop success with 50 demonstrations and 100% with 250 demonstrations on a contact-free MuJoCo Panda reach task.
+          - Retained 96.7–100% success across 0–45° camera motion by reconstructing observations into a common world frame.
+          - Restored strong-occlusion performance from 3.3% to 100% through two-view fusion without policy retraining; quantified collapse under depth and extrinsic error.
 
-      - name: 3D Perception, Latency-aware Control, and Motion Planning
+      - name: XR-1 VLA Action-Prefix Temporal Alignment
         summary: >
-          Explored perception-control and planning components in simulation,
-          focusing on how representation, runtime latency, and geometric
-          constraints affect robot execution.
+          Audited whether the native action-prefix interface of the
+          5.1B-parameter Xiaomi Robotics XR-1 VLA provides robustness to delayed
+          asynchronous replanning.
         highlights:
-          - Worked with point-cloud perception, 3D geometric representations, and RGB-versus-3D comparisons in closed-loop perception/control evaluation.
-          - Conducted 3D perception and MuJoCo control experiments together with latency-aware and asynchronous policy-execution studies.
-          - Implemented waypoint planning with inverse kinematics, collision checking, trajectory execution, and planning-failure analysis.
-
-      - name: Quantum Inertial Sensing — Multi-channel Modeling and Crosstalk Decoupling
-        summary: >
-          Built a unified observation framework for four-axis inertial
-          measurement scenarios and analyzed channel coupling under non-ideal
-          symmetry and multi-channel mixing conditions.
-        highlights:
-          - Studied the joint effects of channel weights, phase bias, pulse non-idealities, AC Stark shifts, and cross-crosstalk through a multi-path phase-superposition model.
-          - Explored system-level optimization through parameter solving and spatial separation.
-          - Abstracted the workflow into a transferable observation, calibration, and signal-decoupling pipeline.
-
-      - name: Complex Dynamical System Simulation and Experimental Platform Integration
-        summary: >
-          Combined numerical modeling with hands-on optical, thermal, magnetic,
-          electronic, and control-system integration for complex sensing
-          experiments.
-        highlights:
-          - Built Hamiltonian-based simulation and numerical-solving workflows for spatial distributions, magnetic fields, Zeeman sub-level effects, spectral asymmetry, and pulse calibration.
-          - Iterated laser-frequency stabilization paths and completed AOM, fiber coupling, and saturated-absorption spectrum setup.
-          - Contributed to insulation, heating, three-axis coil, temperature sensing, and staged PID-control systems.
-          - Accumulated practical experience in hardware integration, system troubleshooting, sensitivity analysis, and engineering implementation.
+          - Implemented causal self-generated prefix plumbing for 30×60 action chunks and ran 190 formal generations across 4×RTX 4090.
+          - Measured 288 ms mean / 318 ms p95 generation latency and found growing right-arm handoff degradation at medium and large phase offsets.
+          - Demonstrated selective post-training feasibility for 675M parameters while reporting the study as a real-model systems boundary rather than a physical-robot success claim.
 
     Research and Engineering Focus:
       - bullet: Visuomotor policy learning for manipulation, including imitation learning, action chunking, replanning, generalization, and closed-loop evaluation.

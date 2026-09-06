@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450" role="img" aria-labelledby="title desc">
+  <title id="title">Metric 3D visuomotor learning executive summary</title>
+  <desc id="desc">A calibrated object-centric 3D policy is sample efficient and viewpoint robust, two-view fusion restores performance under occlusion, and calibration errors define a clear failure boundary.</desc>
+  <rect width="1200" height="450" rx="24" fill="#f7f9fc"/>
+  <text x="60" y="60" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172033">Metric geometry: strong low-data prior, measurable failure boundary</text>
+  <text x="60" y="96" font-family="Arial, sans-serif" font-size="18" fill="#536079">MuJoCo Panda reach · RGB-D + GT mask → world-frame cloud → 31K PointNet → 7D joint target</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="60" y="145" width="250" height="178" rx="18" fill="#ffffff" stroke="#4b77be" stroke-width="3"/>
+    <text x="85" y="183" font-size="19" font-weight="700" fill="#214a84">Low-data learning</text>
+    <text x="85" y="232" font-size="38" font-weight="700" fill="#172033">95%</text>
+    <text x="85" y="263" font-size="17" fill="#172033">with 50 demos</text>
+    <text x="85" y="293" font-size="15" fill="#536079">250 demos → 100%</text>
+    <rect x="335" y="145" width="250" height="178" rx="18" fill="#ffffff" stroke="#2f8f65" stroke-width="3"/>
+    <text x="360" y="183" font-size="19" font-weight="700" fill="#236b4d">Viewpoint robustness</text>
+    <text x="360" y="232" font-size="32" font-weight="700" fill="#172033">96.7–100%</text>
+    <text x="360" y="263" font-size="17" fill="#172033">camera 0° → 45°</text>
+    <text x="360" y="293" font-size="15" fill="#536079">live extrinsics rebuild world frame</text>
+    <rect x="610" y="145" width="250" height="178" rx="18" fill="#ffffff" stroke="#2f8f65" stroke-width="3"/>
+    <text x="635" y="183" font-size="19" font-weight="700" fill="#236b4d">Occlusion recovery</text>
+    <text x="635" y="225" font-size="27" font-weight="700" fill="#172033">3.3% → 100%</text>
+    <text x="635" y="260" font-size="17" fill="#172033">strong: 1 view → 2 views</text>
+    <text x="635" y="293" font-size="15" fill="#536079">same frozen policy</text>
+    <rect x="885" y="145" width="255" height="178" rx="18" fill="#fff5f3" stroke="#d15b4f" stroke-width="3"/>
+    <text x="910" y="183" font-size="19" font-weight="700" fill="#a43c33">Calibration boundary</text>
+    <text x="910" y="225" font-size="27" font-weight="700" fill="#172033">1° rotation → 0%</text>
+    <text x="910" y="260" font-size="17" fill="#172033">20 mm shift → 0%</text>
+    <text x="910" y="293" font-size="15" fill="#536079">bias exceeds 15 mm tolerance</text>
+    <rect x="60" y="354" width="1080" height="50" rx="14" fill="#eef3f9"/>
+    <text x="85" y="386" font-size="16" fill="#536079">Honest scope: contact-free reach, GT segmentation, calibrated RGB-D, single-seed feasibility study.</text>
+  </g>
+</svg>
