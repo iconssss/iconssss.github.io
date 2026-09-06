@@ -24,7 +24,7 @@ latest_posts:
 ---
 
 <p style="margin-top: -0.35rem; margin-bottom: 1.5rem; font-size: 1rem; letter-spacing: 0.01em;">
-  Beijing / Shanghai · <a href="mailto:xinyue4496@163.com">xinyue4496@163.com</a> · +86 18221784496
+  Beijing / Shanghai · <a href="mailto:xinyue4496@163.com">xinyue4496@163.com</a>
 </p>
 
 我是辛约（Yue Xin），清华大学精密仪器系直博生。本科就读于清华大学未央书院，接受了数理基础科学与测控技术与仪器双学位培养。我的研究训练始于复杂惯性传感系统，涵盖动力学建模、数值仿真、误差分析、参数校准、信号处理与实验平台联调。
