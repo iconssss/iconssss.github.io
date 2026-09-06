@@ -1,79 +1,136 @@
 cv:
   name: Yue Xin (辛约)
-  label: PhD Student | Intelligent Sensing and System Modeling
+  label: Ph.D. Researcher | Robot Learning, Computer Vision, and Intelligent Systems
   email: xinyue4496@163.com
   phone: "+86 18221784496"
   location: Beijing / Shanghai
+  website: https://iconssss.github.io
   image: ""
   summary: >
-    I am currently a direct PhD student in the Department of Precision
-    Instrument at Tsinghua University. My background combines physics,
-    mathematics, measurement and control, and system modeling. My recent work
-    spans precision sensing, multi-channel observation modeling, error
-    analysis, experimental platform integration, and transferable foundations
-    for robotics and intelligent sensing.
+    Direct Ph.D. student at Tsinghua University with interdisciplinary training
+    in physics, mathematics, measurement and control, and complex sensing
+    systems. My work combines system modeling and experimental engineering with
+    hands-on practice in computer vision, robot learning, VLA training and
+    evaluation, ROS2 policy execution, 3D perception, and motion planning. I am
+    seeking robot algorithm and embodied AI roles where rigorous modeling and
+    end-to-end engineering are both important.
 
   sections:
+    Experience:
+      - company: Goertek Inc.
+        position: Algorithm Engineering Intern — Computer Vision and Edge Deployment
+        location: China
+        start_date: 2026-06
+        end_date: 2026-07
+        summary: >
+          Developed and delivered a multi-person motion perception and identity
+          recognition system for intelligent-device interaction, covering the
+          full workflow from requirements and data collection to evaluation,
+          GPU optimization, Unity integration, and Windows edge deployment.
+        highlights:
+          - Built a multi-person pose and motion-analysis pipeline with YOLO Pose and OpenCV, including ROI/slot-based perception and a causal temporal state machine for periodic-motion recognition.
+          - Implemented temporal keypoint fusion, scale normalization, motion gating, and event-level manual annotation and matching for systematic evaluation.
+          - Applied FP16 inference, temporal micro-batching, asynchronous video acquisition, and geometry-consistent preprocessing to achieve approximately 30 FPS video processing on an RTX 3050.
+          - Evaluated a three-person historical test video with 145 ground-truth events, 142 predictions, and 141 matches, corresponding to an approximately 97.2% event match rate.
+          - Built a local identity module with YuNet and SFace and established the binding workflow between student identity and visual slots.
+          - Integrated heartbeat, identity, task-control, and real-time result messages with a Unity client through UDP/OSC, then verified delivery on a Windows RTX 3050 edge workstation.
+
     Education:
       - institution: Department of Precision Instrument, Tsinghua University
         location: Beijing, China
         area: Precision Instrument
-        studyType: PhD Student (Direct PhD Track)
+        studyType: Ph.D. Student (Direct Ph.D. Track)
         start_date: 2024-09
         end_date: Present
         highlights:
-          - Research focus includes intelligent sensing, system modeling, and robotics-related foundations.
-          - Building on prior training in physics, measurement, and interdisciplinary engineering.
+          - Researching complex inertial sensing systems through dynamic modeling, numerical simulation, error analysis, signal processing, parameter calibration, and experimental platform integration.
+          - Developed experience in reasoning about sensing uncertainty, system identification and debugging, and hardware-software interaction.
 
       - institution: Weiyang College, Tsinghua University
         location: Beijing, China
-        area: Dual-degree training in Mathematical and Physical Basic Sciences and Measurement, Control Technology and Instrument
-        studyType: Bachelor's Degree
+        area: Mathematical and Physical Basic Sciences; Measurement, Control Technology and Instruments
+        studyType: Bachelor's Degree, Dual-degree Program
         start_date: 2020-09
         end_date: 2024-06
         highlights:
-          - Completed systematic training across physics, mathematics, modeling, and instrumentation.
-          - Developed the foundation for cross-disciplinary research and engineering problem solving.
-
-    Awards:
-      - title: National High School Mathematics League (Shanghai Division), Second Prize
-        awarder: Competition Award
-      - title: National High School Physics Competition (Shanghai Division), Second Prize
-        awarder: Competition Award
+          - Completed interdisciplinary training across physics, mathematics, numerical analysis, control, measurement, and instrumentation.
+          - Built a rigorous foundation for cross-domain research and engineering problem solving.
 
     Skills:
-      - name: Programming
+      - name: Languages
         keywords:
           - Python
-          - Numerical simulation
-          - Data processing
-          - Parameter fitting
-          - Research scripting
-          - MATLAB
           - C++
+          - MATLAB
 
-      - name: Modeling and Analysis
+      - name: Machine Learning and Vision
         keywords:
-          - Multi-channel observation models
-          - Complex dynamical system simulation
-          - Parameter estimation
-          - Error propagation analysis
-          - Signal analysis
+          - PyTorch
+          - OpenCV
+          - YOLO Pose
+          - YuNet
+          - SFace
+          - computer vision
+          - deep learning
+          - 3D perception
 
-      - name: Robotics and Systems
+      - name: Robot Learning
         keywords:
-          - ROS2 basics
-          - URDF
-          - RViz
-          - TF
-          - State estimation
+          - imitation learning
+          - Behavioral Cloning
+          - Diffusion Policy
+          - action chunking
+          - closed-loop rollout evaluation
+          - LeRobot
+          - SmolVLA
 
-      - name: Experiment and Control
+      - name: Robotics
         keywords:
+          - ROS2
+          - MoveIt
+          - ros2_control
+          - KDL inverse kinematics
+          - robot manipulation
+          - motion planning
+
+      - name: Simulation
+        keywords:
+          - ManiSkill
+          - MuJoCo
+          - LIBERO
+          - Panda robot simulation
+
+      - name: ML and Runtime Systems
+        keywords:
+          - CUDA environment debugging
+          - multi-GPU DDP
+          - DeepSpeed ZeRO
+          - checkpoint management
+          - asynchronous policy execution
+          - policy latency analysis
+          - model/dataset contract checking
+
+      - name: Engineering Tools
+        keywords:
+          - Linux
+          - Windows
+          - WSL2
+          - Git/GitHub
+          - Docker
+          - SSH
+          - UDP/OSC
+          - Unity integration
+
+      - name: Modeling, Control, and Experimentation
+        keywords:
+          - dynamic system modeling
+          - numerical simulation
+          - error propagation
+          - parameter estimation and calibration
+          - signal processing
           - PID control
-          - Optical-electro-mechanical system integration
-          - Hardware debugging
-          - System troubleshooting
+          - hardware-software integration
+          - system troubleshooting
 
     Languages:
       - name: Chinese
@@ -83,49 +140,86 @@ cv:
         summary: CET-6 596 · Able to read research papers and communicate in technical contexts
 
     Projects:
-      - name: "Quantum Inertial Navigation Sensing: Multi-channel Modeling and Crosstalk Decoupling"
+      - name: Robot Policy Learning in Manipulation Simulation
         summary: >
-          Built a unified observation framework in a quantum inertial navigation
-          sensing context for four-axis inertial measurement scenarios, and
-          analyzed how channel coupling emerges under non-ideal symmetry and
-          multi-channel mixing conditions.
+          Trained and evaluated imitation-learning policies in a ManiSkill robot
+          manipulation environment, with emphasis on controlled comparison and
+          closed-loop rollout behavior rather than benchmark claims.
         highlights:
-          - Framed the work around quantum inertial navigation measurement, while extracting transferable methods for system modeling and observation decoupling.
-          - Studied the joint effects of channel weights, phase bias, and pulse non-idealities through a multi-path phase superposition model.
-          - Analyzed AC Stark shifts and cross-crosstalk as sources of system error and pulse fidelity degradation.
-          - Explored system-level optimization ideas based on parameter solving and spatial separation.
-          - Abstracted the workflow into a transferable pipeline of observation, calibration, and signal decoupling.
+          - Implemented experiments with Behavioral Cloning, Chunk BC, and Diffusion Policy.
+          - Worked with demonstration datasets, action chunking, policy training, and closed-loop rollout evaluation.
+          - Compared policy behavior through reproducible simulation experiments and failure analysis.
 
-      - name: Complex Dynamical System Simulation and Error Mechanism Analysis
+      - name: VLA Training, Evaluation, and Debugging
         summary: >
-          Extended numerical simulation frameworks from simple velocity
-          distribution models toward more realistic systems involving spatial
-          distribution, magnetic fields, and Zeeman sub-level effects.
+          Conducted engineering experiments with LeRobot, SmolVLA, and LIBERO to
+          understand VLA training and inference pipelines, policy timing, and
+          evaluation behavior.
         highlights:
-          - Built models around Hamiltonian construction, numerical solving, and result validation.
-          - Investigated Raman spectral asymmetry, Rabi oscillation behavior, and pulse calibration issues.
-          - Turned complicated physical phenomena into parameterized models and sensitivity analysis tasks.
-          - Strengthened the ability to transfer physical intuition into computational modeling for sensing and robotics problems.
+          - Completed SmolVLA base training, multi-GPU training, LIBERO evaluation, replanning experiments, paired evaluation, and checkpoint comparisons.
+          - Investigated action prefix/chunk execution, policy replanning, checkpoint compatibility, and observation/action contracts.
+          - Used PyTorch DDP and DeepSpeed ZeRO on multi-RTX 4090 environments, including GPU memory, CUDA, checkpoint, and reproducibility debugging.
 
-      - name: Optical-Electro-Mechanical Platform Design and System Debugging
+      - name: ROS2 Learned-policy Execution Pipeline
         summary: >
-          Participated in the design, integration, and debugging of experimental
-          platforms involving optics, thermal control, magnetic fields, and
-          instrumentation constraints.
+          Built a simulated learned-policy deployment architecture in ROS2 Jazzy
+          for a Panda manipulator, separating policy inference from the
+          higher-frequency robot execution layer.
         highlights:
-          - Iterated laser frequency stabilization paths and completed AOM, fiber coupling, and saturated absorption spectrum setup.
-          - Contributed to the design of insulation shells, heaters, three-axis coils, and thermal control systems.
-          - Debugged temperature sensing circuits and control programs with staged heating and PID control.
-          - Accumulated hands-on experience in hardware integration, system troubleshooting, and engineering implementation.
+          - Connected a Python policy node running at 20 Hz to a C++ executor running at 100 Hz.
+          - Integrated MoveIt, ros2_control, KDL inverse kinematics, robot descriptions, transforms, and trajectory execution.
+          - Examined asynchronous execution, latest-action semantics, policy latency, and the interface between learned actions and robot control.
 
-    Research Interests:
-      - bullet: Precision sensing and intelligent perception
-      - bullet: Complex sensing system modeling and calibration
-      - bullet: State estimation and multi-channel observation decoupling
-      - bullet: Robotics-related system modeling and transferable engineering methods
+      - name: 3D Perception, Latency-aware Control, and Motion Planning
+        summary: >
+          Explored perception-control and planning components in simulation,
+          focusing on how representation, runtime latency, and geometric
+          constraints affect robot execution.
+        highlights:
+          - Worked with point-cloud perception, 3D geometric representations, and RGB-versus-3D comparisons in closed-loop perception/control evaluation.
+          - Conducted 3D perception and MuJoCo control experiments together with latency-aware and asynchronous policy-execution studies.
+          - Implemented waypoint planning with inverse kinematics, collision checking, trajectory execution, and planning-failure analysis.
 
-    Personal Highlights:
-      - bullet: Strong foundation in physics, mathematics, and system modeling, supported by dual-degree undergraduate training.
-      - bullet: Fast learner with clear cross-domain transfer ability from quantum sensing to robotics and intelligent sensing topics.
-      - bullet: Good at turning complex problems into analyzable models and pushing them toward practical implementation.
-      - bullet: Open, communicative, and comfortable working across different technical backgrounds in teams.
+      - name: Quantum Inertial Sensing — Multi-channel Modeling and Crosstalk Decoupling
+        summary: >
+          Built a unified observation framework for four-axis inertial
+          measurement scenarios and analyzed channel coupling under non-ideal
+          symmetry and multi-channel mixing conditions.
+        highlights:
+          - Studied the joint effects of channel weights, phase bias, pulse non-idealities, AC Stark shifts, and cross-crosstalk through a multi-path phase-superposition model.
+          - Explored system-level optimization through parameter solving and spatial separation.
+          - Abstracted the workflow into a transferable observation, calibration, and signal-decoupling pipeline.
+
+      - name: Complex Dynamical System Simulation and Experimental Platform Integration
+        summary: >
+          Combined numerical modeling with hands-on optical, thermal, magnetic,
+          electronic, and control-system integration for complex sensing
+          experiments.
+        highlights:
+          - Built Hamiltonian-based simulation and numerical-solving workflows for spatial distributions, magnetic fields, Zeeman sub-level effects, spectral asymmetry, and pulse calibration.
+          - Iterated laser-frequency stabilization paths and completed AOM, fiber coupling, and saturated-absorption spectrum setup.
+          - Contributed to insulation, heating, three-axis coil, temperature sensing, and staged PID-control systems.
+          - Accumulated practical experience in hardware integration, system troubleshooting, sensitivity analysis, and engineering implementation.
+
+    Research and Engineering Focus:
+      - bullet: Robot learning and embodied AI for manipulation, with emphasis on imitation learning, policy evaluation, and reliable execution.
+      - bullet: Vision and 3D perception for closed-loop robot interaction.
+      - bullet: Robot software, motion planning, and latency-aware policy runtime systems.
+      - bullet: Complex sensing-system modeling, calibration, uncertainty reasoning, and hardware-software integration.
+
+    Currently Exploring:
+      - bullet: Vision-Language-Action models and robot foundation models.
+      - bullet: Advanced imitation learning and flow-based robot policies.
+      - bullet: OpenPI and π0-family VLA deployment workflows.
+
+    Professional Strengths:
+      - bullet: Rigorous foundation in physics, mathematics, control, and system modeling, supported by Tsinghua dual-degree training.
+      - bullet: Ability to move between model formulation, software implementation, evaluation, and experimental or edge-system debugging.
+      - bullet: Hands-on experience across research prototypes, simulation benchmarks, GPU training systems, and delivered computer-vision applications.
+      - bullet: Clear cross-domain trajectory from complex sensing and control toward robot learning and embodied intelligence.
+
+    Honors and Awards:
+      - title: National High School Mathematics League (Shanghai Division), Second Prize
+        awarder: Competition Award
+      - title: National High School Physics Competition (Shanghai Division), Second Prize
+        awarder: Competition Award

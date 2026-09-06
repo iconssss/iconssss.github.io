@@ -2,47 +2,74 @@
 layout: about
 title: About
 permalink: /
-subtitle: Tsinghua University | PhD Student | Intelligent Sensing, System Modeling, and Engineering Practice
+subtitle: Tsinghua Ph.D. | Robot Learning, Computer Vision, and Intelligent Systems
 
 profile:
   align: right
   image: xinyue-profile.jpg
   image_circular: true # crops the image to make it circular
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+selected_papers: false
+social: false
 
 announcements:
-  enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
+  scrollable: true
+  limit: 5
 
 latest_posts:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 ---
 
 <p style="margin-top: -0.35rem; margin-bottom: 1.5rem; font-size: 1rem; letter-spacing: 0.01em;">
   Beijing / Shanghai · <a href="mailto:xinyue4496@163.com">xinyue4496@163.com</a> · +86 18221784496
 </p>
 
-我是辛约（Yue Xin），目前就读于清华大学精密仪器系，处于直博阶段。本科毕业于清华大学未央书院，完成了数理基础科学与测控技术与仪器双学位培养。我的经历从量子惯导精密测量出发，逐步延伸到复杂传感系统建模、误差机理分析、实验平台搭建，以及机器人系统与智能感知相关基础。
+我是辛约（Yue Xin），清华大学精密仪器系直博生。本科就读于清华大学未央书院，接受了数理基础科学与测控技术与仪器双学位培养。我的研究训练始于复杂惯性传感系统，涵盖动力学建模、数值仿真、误差分析、参数校准、信号处理与实验平台联调。
 
-这里整理了我的教育背景、研究兴趣、项目经历与能力结构，希望能比单页 PDF 简历更立体地呈现我的知识基础、研究训练与工程实践。我的经历主要围绕数理基础、系统建模、实验平台搭建、参数校准与工程调试展开。若希望快速浏览完整履历，可直接查看 [CV 页面]({{ '/cv/' | relative_url }}).
+在此基础上，我正将系统建模、控制与软硬件协同能力进一步迁移到**机器人学习、具身智能与视觉感知**。目前已完成计算机视觉边缘部署、模仿学习策略训练与评估、VLA 训练调试、ROS2 策略执行链路、三维感知及运动规划等项目实践，求职方向聚焦机器人算法与具身智能。
 
-## 研究方向与关注问题
+## 职业方向
 
-- 智能感知与机器人相关系统基础
-- 复杂传感系统建模与校准
-- 状态估计与多通道观测解耦
-- 实验平台集成与工程调试
+- Robot Learning / Embodied AI
+- Imitation Learning / Vision-Language-Action Models
+- Vision-based Robot Control / Robot Manipulation
+- Robot Perception, Policy Learning, and Runtime Systems
 
-## 我的能力特点
+## 工程经历
 
-- 扎实的物理、数学与系统建模基础，能够快速把复杂问题抽象成可分析、可求解的模型
-- 较强的跨方向迁移能力，已逐步把量子传感研究中的建模与分析方法迁移到机器人和智能感知问题
-- 熟悉 Python、MATLAB 等科研与建模工具，也具备基础 C++ 和 ROS2 工具链接触经验
-- 具备实验系统集成、硬件联调、PID 控制、信号分析与系统级排障经验
+### Goertek · Computer Vision / Algorithm Engineering Intern
 
-如果你希望进一步了解我的教育背景、项目经历与技能结构，可以继续查看 [CV 页面]({{ '/cv/' | relative_url }}).
+面向智能设备交互场景，完成多人实时人体运动感知与身份识别系统的算法开发和 Windows 边缘端交付，覆盖需求分析、数据采集、算法设计、人工标注与评估、GPU 推理优化、身份绑定、通信接口和 Unity 集成。
+
+- 使用 YOLO Pose 与 OpenCV 构建多人姿态和运动分析链路，设计 ROI / slot-based 感知流程与因果时序状态机
+- 通过 FP16、时序微批处理、异步视频采集和几何一致预处理，在 RTX 3050 上实现约 30 FPS 的真实人员视频处理
+- 在三人历史测试视频上完成 145 个真值事件的逐事件评估，匹配 141 个，事件匹配率约 97.2%
+- 使用 YuNet 与 SFace 构建本地身份识别模块，并通过 UDP / OSC 对接 Unity 上位机
+
+## 机器人算法实践
+
+**策略学习与评估：** 在 ManiSkill 操作环境中训练并验证 Behavioral Cloning、Chunk BC 与 Diffusion Policy；围绕演示数据、动作分块和闭环 rollout 建立实验流程。
+
+**VLA 与训练系统：** 使用 LeRobot、SmolVLA 与 LIBERO 开展基础训练、多 GPU 训练、checkpoint 对比、replanning 和成对评估，积累了模型/数据接口检查、显存与 CUDA 环境调试、实验复现经验。
+
+**机器人软件与执行：** 在 ROS2 Jazzy 中搭建 Python policy node 与 C++ executor 协同链路，结合 MoveIt、ros2_control、KDL IK 和 Panda 仿真，将 20 Hz 策略输出衔接至 100 Hz 执行层。
+
+**感知、控制与规划：** 完成点云感知、RGB 与 3D 表征对比、MuJoCo 闭环控制、策略延迟与异步执行实验，以及包含逆运动学、碰撞检测和轨迹执行的 waypoint planning。
+
+## 技术能力
+
+- **Languages:** Python, C++, MATLAB
+- **Machine Learning & Vision:** PyTorch, OpenCV, YOLO Pose, computer vision, deep learning, 3D perception
+- **Robot Learning:** imitation learning, behavior cloning, Diffusion Policy, action chunking, LeRobot, SmolVLA
+- **Robotics:** ROS2, MoveIt, ros2_control, robot kinematics, motion planning
+- **Simulation:** ManiSkill, MuJoCo, LIBERO
+- **Systems:** Linux, Windows, Git, Docker, CUDA, DDP, DeepSpeed, remote GPU development, UDP / OSC
+
+## 研究与系统基础
+
+博士阶段的研究聚焦复杂惯性传感系统，而非直接以具身智能为研究对象。这段经历使我形成了对动态系统、传感不确定性、误差传播、系统辨识与调试、软硬件交互的系统性理解，也构成了我进入机器人感知、控制与策略部署方向的差异化基础。
+
+目前正在继续探索 VLA、机器人基础模型、先进模仿学习、策略部署与 OpenPI / π0 系列方法。更完整的教育、经历、项目与技能信息请查看 [CV 页面]({{ '/cv/' | relative_url }}).

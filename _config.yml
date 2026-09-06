@@ -7,18 +7,18 @@ first_name: Yue
 middle_name:
 last_name: Xin
 contact_note: >
-  Email is the fastest way to reach me. This site is maintained as a concise
-  profile and CV for job and research opportunities.
+  Email is the fastest way to reach me. This site presents my work in robot
+  learning, computer vision, intelligent systems, and engineering research.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal website of Yue Xin (辛约), featuring a concise profile and CV focused
-  on intelligent sensing, system modeling, robotics-related research, and
-  engineering practice.
+  Professional portfolio of Yue Xin (辛约), a Tsinghua Ph.D. student working
+  across robot learning, embodied AI, computer vision, complex sensing systems,
+  and engineering practice.
 footer_text: >
   Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and the
   <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a>
   theme. Hosted on <a href="https://pages.github.com/" target="_blank">GitHub
   Pages</a>.
-keywords: yue xin, xin yue, cv, resume, robotics, sensing, modeling, tsinghua
+keywords: yue xin, xin yue, cv, resume, robot learning, embodied ai, vla, computer vision, ros2, tsinghua
 lang: zh-CN # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
