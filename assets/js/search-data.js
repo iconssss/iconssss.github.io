@@ -33,6 +33,11 @@ ninja.data = [{
           description: "Low-data control, viewpoint robustness, and multi-view recovery",
           section: "Projects",handler: () => {
               window.location.href = "/projects/metric-3d-perception/";
+            },},{id: "projects-smolvla-fine-tuning-amp-closed-loop-evaluation",
+          title: 'SmolVLA Fine-Tuning &amp;amp; Closed-Loop Evaluation',
+          description: "100K-update VLA adaptation and an audited 400-episode LIBERO benchmark",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/smolvla-libero/";
             },},{id: "projects-reliable-vla-fine-tuning-amp-evaluation",
           title: 'Reliable VLA Fine-Tuning &amp;amp; Evaluation',
           description: "4-GPU SmolVLA training and RNG-controlled LIBERO evaluation",
