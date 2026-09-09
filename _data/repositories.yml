@@ -4,6 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - iconssss/project201-smolvla-libero
   - iconssss/multi-gpu-vla-finetune-libero
   - iconssss/project09-latency-aware-robot-policy-runtime
   - iconssss/project08-3d-embodied-perception

@@ -9,9 +9,9 @@ cv:
     Direct Ph.D. student at Tsinghua University with interdisciplinary training
     in physics, mathematics, measurement and control, and complex sensing
     systems. I combine rigorous modeling and experimental engineering with
-    hands-on work in visuomotor policy learning, VLA training and evaluation,
-    computer vision, 3D perception, ROS2 policy execution, and latency-aware
-    robot systems. I am seeking robot learning and embodied AI research
+    hands-on work in VLA fine-tuning, large-scale closed-loop evaluation,
+    visuomotor policy learning, computer vision, 3D perception, ROS2 policy
+    execution, and latency-aware robot systems. I am seeking robot learning and embodied AI research
     engineering roles that value both scientific discipline and end-to-end
     implementation.
 
@@ -142,15 +142,15 @@ cv:
         summary: CET-6 596 · Able to read research papers and communicate in technical contexts
 
     Projects:
-      - name: Reliable Multi-GPU VLA Fine-Tuning and Evaluation
+      - name: SmolVLA Fine-Tuning and 400-Episode Closed-Loop Evaluation
         summary: >
-          Built an end-to-end SmolVLA training and evaluation workflow on LIBERO,
-          from native observation/action contract validation to controlled
-          stochastic-policy checkpoint comparison.
+          Completed an auditable, single-RTX-4090 SmolVLA adaptation workflow
+          from pinned pretrained-policy initialization to a frozen 100K-update
+          checkpoint and four-suite LIBERO evaluation.
         highlights:
-          - Trained on 1,693 episodes / 273,465 frames with 4×RTX 4090 DDP, reaching 3.82× speedup and 289 samples/s at global batch 64.
-          - Integrated official LeRobot training and LIBERO closed-loop evaluation, including self-contained checkpoints and optimizer-state resume from 5K to 20K steps.
-          - Identified task-order-dependent flow-matching RNG as a checkpoint-comparison confound and implemented per-episode paired policy-noise control; the corrected 5K→20K result was 2/30→4/30, reported as a weak signal rather than a significance claim.
+          - Fine-tuned for 100,000 optimizer updates at effective batch 64 (6.4M sample presentations), with 99.88M / 450.05M parameters trainable and the vision encoder frozen; preserved frozen configs, hashes, logs, and rollout evidence.
+          - Evaluated 40 tasks over 400 fixed-init closed-loop episodes, reaching 71.5% endpoint success overall: 82% Spatial, 78% Object, 80% Goal, and 46% Long.
+          - Resolved the checkpoint-to-LIBERO 3-camera/6D/6D versus 2-camera/8D/7D runtime-contract mismatch; verified strict offline reload with zero missing, unexpected, or shape-mismatched keys.
 
       - name: Latency-Aware Runtime for Closed-Loop Robot Policies
         summary: >
@@ -171,16 +171,6 @@ cv:
           - Achieved 95% closed-loop success with 50 demonstrations and 100% with 250 demonstrations on a contact-free MuJoCo Panda reach task.
           - Retained 96.7–100% success across 0–45° camera motion by reconstructing observations into a common world frame.
           - Restored strong-occlusion performance from 3.3% to 100% through two-view fusion without policy retraining; quantified collapse under depth and extrinsic error.
-
-      - name: XR-1 VLA Action-Prefix Temporal Alignment
-        summary: >
-          Audited whether the native action-prefix interface of the
-          5.1B-parameter Xiaomi Robotics XR-1 VLA provides robustness to delayed
-          asynchronous replanning.
-        highlights:
-          - Implemented causal self-generated prefix plumbing for 30×60 action chunks and ran 190 formal generations across 4×RTX 4090.
-          - Measured 288 ms mean / 318 ms p95 generation latency and found growing right-arm handoff degradation at medium and large phase offsets.
-          - Demonstrated selective post-training feasibility for 675M parameters while reporting the study as a real-model systems boundary rather than a physical-robot success claim.
 
     Research and Engineering Focus:
       - bullet: Visuomotor policy learning for manipulation, including imitation learning, action chunking, replanning, generalization, and closed-loop evaluation.

@@ -3,7 +3,7 @@ layout: page
 title: Reliable VLA Fine-Tuning & Evaluation
 description: 4-GPU SmolVLA training and RNG-controlled LIBERO evaluation
 img: assets/img/projects/vla-evaluation.svg
-importance: 1
+importance: 4
 category: featured
 ---
 

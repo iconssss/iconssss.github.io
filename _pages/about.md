@@ -31,7 +31,7 @@ latest_posts:
 
 我是辛约（Yue Xin），清华大学精密仪器系直博生，求职方向聚焦 **Robot Learning / Embodied AI Research Engineer** 与机器人算法岗位。
 
-我的核心能力是把机器人学习从训练脚本推进到**可信的闭环评测与可部署系统**：验证模型/数据/动作契约，构建多 GPU 训练与仿真闭环，识别随机性和时序陈旧等评测混淆，并用严格对照实验定位失败边界。数理、控制与复杂惯性传感系统训练，使我尤其重视动态过程、误差传播、校准和软硬件接口。
+我的核心能力是把机器人学习从训练脚本推进到**可信的闭环结果与可部署系统**：完成 VLA 微调和大规模 rollout，验证模型/数据/动作契约，处理 checkpoint、随机性与时序问题，并用严格实验定位失败边界。数理、控制与复杂惯性传感系统训练，使我尤其重视动态过程、误差传播、校准和软硬件接口。
 
 ## Selected Work
 
@@ -39,9 +39,9 @@ latest_posts:
   <div class="col-md-4 mb-4">
     <div class="card h-100">
       <div class="card-body">
-        <h5 class="card-title">Reliable VLA Evaluation</h5>
-        <p class="card-text"><strong>4×4090 · 3.82× DDP</strong><br>SmolVLA + LIBERO 训练、官方闭环评测与 paired policy RNG。</p>
-        <a href="{{ '/projects/vla-evaluation/' | relative_url }}">查看项目 →</a>
+        <h5 class="card-title">SmolVLA Closed-Loop</h5>
+        <p class="card-text"><strong>100K updates · 71.5%</strong><br>单张 RTX 4090 微调，并在 40 个 LIBERO 任务、400 回合中完成冻结评测。</p>
+        <a href="{{ '/projects/smolvla-libero/' | relative_url }}">查看项目 →</a>
       </div>
     </div>
   </div>
@@ -65,7 +65,7 @@ latest_posts:
   </div>
 </div>
 
-面向 VLA 系统与 action chunk 时序问题，我还完成了 [5.1B XR-1 action-prefix temporal alignment study]({{ '/projects/xr1-temporal-alignment/' | relative_url }})：190 次真实模型 generation 显示，原生 prefix API 并不自动提供异步时延鲁棒性。
+其他 VLA 系统工作包括 [4-GPU SmolVLA 训练与 RNG-controlled evaluation]({{ '/projects/vla-evaluation/' | relative_url }})，以及 [5.1B XR-1 action-prefix temporal alignment study]({{ '/projects/xr1-temporal-alignment/' | relative_url }})。前者实现 3.82× DDP 加速并定位随机策略评测混淆；后者用 190 次真实模型 generation 验证原生 prefix API 不会自动带来时延鲁棒性。
 
 ## Engineering Experience
 

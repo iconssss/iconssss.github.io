@@ -3,7 +3,7 @@ layout: page
 title: XR-1 VLA Temporal Alignment
 description: Testing whether action-prefix conditioning provides latency robustness
 img: assets/img/projects/xr1-prefix.svg
-importance: 4
+importance: 5
 category: featured
 ---
 
